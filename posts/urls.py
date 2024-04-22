@@ -14,6 +14,6 @@ from .views import UserViewSet, PostViewSet #PostList, PostDetail, UserList, Use
 
 router = SimpleRouter()
 router.register("users", UserViewSet, basename="users")
-router.register("users", PostViewSet, basename="posts")
+router.register("", PostViewSet, basename="posts")
 
 urlpatterns = router.urls
