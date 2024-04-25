@@ -25,7 +25,9 @@ from .serializers import PostSerializer, UserSerializer
 #     queryset = get_user_model().objects.all()
 #     serializer_class = UserSerializer
     
-
+# class UserDetail(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = get_user_model().objects.all()
+#     serializer_class = UserSerializer
 
 class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
